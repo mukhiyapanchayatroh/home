@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#07070b">
+<title>रोह पंचायत डिजिटल पोर्टल — Home</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#07070b;--panel:#101117;--panel2:#15161e;--text:#f6f7fb;--muted:#a4a7b4;--line:rgba(255,255,255,.10);--cyan:#55e6ff;--violet:#8c6cff;--pink:#ff62b0;--green:#71f7b2;--max:1180px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 12% 8%,rgba(140,108,255,.18),transparent 26%),radial-gradient(circle at 88% 14%,rgba(85,230,255,.12),transparent 25%),var(--bg);color:var(--text);font-family:Inter,Arial,sans-serif;overflow-x:hidden}body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.18;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:55px 55px;mask-image:linear-gradient(to bottom,#000,transparent 75%);z-index:-1}
+a{text-decoration:none;color:inherit}.wrap{max-width:var(--max);margin:auto;padding:0 22px}.nav{position:sticky;top:0;z-index:50;background:rgba(7,7,11,.72);backdrop-filter:blur(20px);border-bottom:1px solid var(--line)}.navin{height:76px;display:flex;align-items:center;justify-content:space-between;gap:25px}.logo{font:700 20px 'Space Grotesk';display:flex;align-items:center;gap:10px}.logoMark{width:34px;height:34px;border-radius:11px;background:linear-gradient(135deg,var(--cyan),var(--violet),var(--pink));box-shadow:0 0 35px rgba(140,108,255,.35)}.links{display:flex;gap:5px}.links a{padding:10px 13px;color:#c8cad4;border-radius:10px;font-size:14px}.links a:hover{background:#fff0a;color:#fff}.navbtn,.btn{border:1px solid var(--line);background:linear-gradient(135deg,rgba(85,230,255,.16),rgba(140,108,255,.18));padding:12px 17px;border-radius:12px;font-weight:700;display:inline-flex;align-items:center;justify-content:center;gap:8px}.navbtn:hover,.btn:hover{transform:translateY(-2px);border-color:rgba(85,230,255,.4);box-shadow:0 12px 35px rgba(85,230,255,.10)}.btn.primary{background:linear-gradient(100deg,var(--cyan),var(--violet));color:#07070b;border:0}.btn.dark{background:#fff;color:#07070b;border:0}
+.hero{min-height:760px;display:grid;align-items:center;position:relative;padding:100px 0 90px}.orb{position:absolute;border-radius:50%;filter:blur(1px);pointer-events:none}.orb.one{width:440px;height:440px;right:-120px;top:90px;background:radial-gradient(circle,rgba(85,230,255,.22),transparent 65%)}.orb.two{width:500px;height:500px;left:-240px;bottom:-180px;background:radial-gradient(circle,rgba(255,98,176,.16),transparent 65%)}.heroGrid{display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:center}.eyebrow{display:inline-flex;gap:8px;align-items:center;border:1px solid var(--line);padding:8px 12px;border-radius:30px;background:rgba(255,255,255,.04);font-size:12px;color:#d9dbe3}.dot{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 14px var(--green)}h1{font:700 clamp(50px,7.4vw,92px)/.94 'Space Grotesk';letter-spacing:-4px;margin:22px 0}.gradient{background:linear-gradient(90deg,#fff,var(--cyan) 42%,var(--violet) 75%,var(--pink));-webkit-background-clip:text;background-clip:text;color:transparent}.lead{font-size:18px;line-height:1.7;color:var(--muted);max-width:640px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.micro{display:flex;gap:28px;margin-top:35px;color:#c8cad3;font-size:13px}.micro b{display:block;color:#fff;font-size:20px;margin-bottom:4px}.heroVisual{position:relative}.dash{border:1px solid var(--line);border-radius:28px;background:linear-gradient(145deg,rgba(255,255,255,.09),rgba(255,255,255,.025));box-shadow:0 35px 100px rgba(0,0,0,.4);padding:16px;transform:rotate(2deg)}.dashTop{height:42px;display:flex;align-items:center;gap:7px;padding:0 8px}.ball{width:9px;height:9px;border-radius:50%;background:#444}.dashScreen{border-radius:20px;overflow:hidden;min-height:480px;background:#090a0f;position:relative;padding:24px}.dashGlow{height:180px;border-radius:20px;background:radial-gradient(circle at 20% 40%,rgba(85,230,255,.65),transparent 26%),radial-gradient(circle at 75% 25%,rgba(255,98,176,.55),transparent 24%),linear-gradient(135deg,#171a35,#0b0d14);margin-bottom:15px}.statrow{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.mini{padding:17px;border:1px solid var(--line);border-radius:16px;background:rgba(255,255,255,.035)}.mini small{color:var(--muted)}.mini b{display:block;font-size:24px;margin-top:8px}.floating{position:absolute;right:-20px;bottom:40px;width:190px;padding:17px;border:1px solid var(--line);border-radius:18px;background:rgba(15,16,22,.88);backdrop-filter:blur(18px);box-shadow:0 25px 60px #0008}.floating strong{font-size:28px}.bar{height:7px;border-radius:9px;background:#292b35;margin-top:13px;overflow:hidden}.bar i{display:block;height:100%;width:82%;background:linear-gradient(90deg,var(--cyan),var(--violet));border-radius:9px}
+section{padding:105px 0}.sectionHead{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:40px}.kicker{color:var(--cyan);font-size:12px;text-transform:uppercase;letter-spacing:2px;font-weight:800}.sectionHead h2{font:700 clamp(34px,5vw,58px)/1 'Space Grotesk';letter-spacing:-2px;margin:10px 0 0}.sectionHead p{color:var(--muted);max-width:480px;line-height:1.6;margin:0}.services{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.service{padding:28px;border:1px solid var(--line);border-radius:22px;background:linear-gradient(145deg,rgba(255,255,255,.06),rgba(255,255,255,.025));min-height:245px;transition:.25s}.service:hover{transform:translateY(-7px);border-color:rgba(85,230,255,.28);box-shadow:0 25px 55px rgba(0,0,0,.25)}.icon{width:50px;height:50px;border-radius:15px;display:grid;place-items:center;font-size:23px;background:linear-gradient(135deg,rgba(85,230,255,.18),rgba(140,108,255,.2));border:1px solid var(--line)}.service h3{font:600 24px 'Space Grotesk';margin:24px 0 10px}.service p{color:var(--muted);line-height:1.6;margin:0}.tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:18px}.tag{font-size:11px;color:#c8cad3;padding:6px 9px;border-radius:20px;background:#fff0a;border:1px solid var(--line)}
+.work{display:grid;grid-template-columns:1.3fr .7fr;gap:16px}.project{min-height:430px;border:1px solid var(--line);border-radius:24px;overflow:hidden;position:relative;background:#111}.project.large{min-height:560px}.projectBg{position:absolute;inset:0;background-size:cover;background-position:center;transition:.4s}.project:hover .projectBg{transform:scale(1.05)}.project:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(4,4,8,.92) 100%)}.projectInfo{position:absolute;z-index:2;bottom:25px;left:25px;right:25px}.projectInfo span{color:var(--cyan);font-size:12px;text-transform:uppercase}.projectInfo h3{font:600 31px 'Space Grotesk';margin:7px 0}.projectInfo p{color:#bfc2cc;margin:0;line-height:1.5}.stack{display:grid;gap:16px}.stack .project{min-height:272px}
+.process{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.step{padding:25px;border-top:1px solid var(--line)}.num{font:700 42px 'Space Grotesk';color:#555865}.step h3{font:600 21px 'Space Grotesk'}.step p{color:var(--muted);line-height:1.6}
+.testimonial{display:grid;grid-template-columns:.75fr 1.25fr;gap:18px}.quote,.cta{border:1px solid var(--line);border-radius:25px;background:linear-gradient(145deg,rgba(255,255,255,.07),rgba(255,255,255,.025));padding:34px}.quote p{font:500 27px/1.45 'Space Grotesk';margin:20px 0}.person{color:var(--muted);font-size:14px}.cta{position:relative;overflow:hidden}.cta:before{content:"";position:absolute;width:350px;height:350px;right:-150px;top:-170px;background:radial-gradient(circle,rgba(85,230,255,.3),transparent 65%)}.cta h2{font:700 47px/1.05 'Space Grotesk';letter-spacing:-2px;margin:0 0 15px}.cta p{color:var(--muted);max-width:600px;line-height:1.7}
+footer{border-top:1px solid var(--line);padding:35px 0;color:#858895}.foot{display:flex;justify-content:space-between;gap:20px;align-items:center}.social{display:flex;gap:8px}.social a{width:38px;height:38px;border:1px solid var(--line);border-radius:10px;display:grid;place-items:center}.mobileMenu{display:none}
+@media(max-width:900px){.heroGrid,.work,.testimonial{grid-template-columns:1fr}.hero{padding-top:70px}.heroVisual{max-width:650px;margin:auto}.services{grid-template-columns:1fr 1fr}.process{grid-template-columns:1fr 1fr}.links{display:none}.mobileMenu{display:block}.navbtn{display:none}}
+@media(max-width:600px){.wrap{padding:0 15px}.navin{height:66px}.hero{min-height:auto;padding:70px 0}.heroGrid{gap:45px}h1{font-size:53px;letter-spacing:-2.5px}.lead{font-size:16px}.micro{gap:16px}.micro b{font-size:17px}.dash{transform:none}.dashScreen{min-height:350px}.services,.process{grid-template-columns:1fr}.sectionHead{display:block}.sectionHead p{margin-top:18px}.project.large{min-height:430px}.stack .project{min-height:230px}.cta h2{font-size:37px}.foot{display:block}.social{margin-top:18px}}
+</style>
+
+<style>
+.agendaBars{height:110px;margin-top:15px;display:flex;align-items:end;gap:7px}.agendaBars i{flex:1;background:linear-gradient(var(--cyan),#242638);border-radius:5px}.agendaBars i:nth-child(1){height:28%}.agendaBars i:nth-child(2){height:43%}.agendaBars i:nth-child(3){height:36%}.agendaBars i:nth-child(4){height:60%}.agendaBars i:nth-child(5){height:72%}.agendaBars i:nth-child(6){height:82%;background:linear-gradient(var(--violet),#242638)}.agendaBars i:nth-child(7){height:94%;background:linear-gradient(var(--pink),#242638)}
+.agendaCard{min-height:240px;background:linear-gradient(135deg,#11131c,#171425)!important}.agendaCard .projectInfo{position:relative;inset:auto;padding:30px}.agendaCard h3{max-width:650px}.galleryMock{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.galleryMock div{height:210px;border:1px solid var(--line);border-radius:20px;background:linear-gradient(135deg,#151722,#25203a);display:flex;align-items:center;justify-content:center;flex-direction:column;font-size:45px;box-shadow:0 20px 50px #0004}.galleryMock span{font-size:14px;color:var(--muted);margin-top:10px}@media(max-width:800px){.galleryMock{grid-template-columns:1fr 1fr}}
+.links.show{display:flex!important;position:absolute;top:70px;left:15px;right:15px;background:#101117;padding:15px;border:1px solid var(--line);border-radius:16px;flex-direction:column}.mobileMenu{display:none}@media(max-width:800px){.mobileMenu{display:block}.nav .links{display:none}}
+</style>
+</head>
+<body>
+<nav class="nav"><div class="wrap navin">
+<a class="logo" href="#home"><i class="logoMark"></i>रोह<span style="color:var(--cyan)">/</span>पोर्टल</a>
+<div class="links">
+<a href="#home">होम</a><a href="#portal">पोर्टल</a><a href="#features">सुविधाएँ</a><a href="#help">सहायता</a>
+</div>
+<a class="navbtn" href="https://mukhiyapanchayatroh.github.io/dipu-mehta-roh/" target="_blank" rel="noopener noreferrer">मुख्य वेबसाइट ↗</a>
+<button class="mobileMenu navbtn">☰</button>
+</div></nav>
+<main id="home">
+<section class="hero">
+<div class="orb one"></div><div class="orb two"></div>
+<div class="wrap heroGrid">
+<div>
+<span class="eyebrow"><i class="dot"></i> रोह पंचायत • डिजिटल पोर्टल • 2026</span>
+<h1>रोह पंचायत का <span class="gradient">डिजिटल पोर्टल</span> एक जगह.</h1>
+<p class="lead">यह पोर्टल Login, शिकायत/सुझाव, प्रशासनिक जानकारी और अन्य डिजिटल सुविधाओं के लिए बनाया गया है। उम्मीदवार का पूरा परिचय, घोषणा पत्र, गतिविधियाँ, फोटो और सार्वजनिक जानकारी हमारी मुख्य वेबसाइट पर उपलब्ध हैं।</p>
+<div class="actions">
+<a class="btn primary" href="https://mukhiyapanchayatroh.github.io/dipu-mehta-roh/" target="_blank" rel="noopener noreferrer">मुख्य वेबसाइट खोलें ↗</a>
+<a class="btn" href="#portal">पोर्टल में प्रवेश करें</a>
+</div>
+<div class="micro"><div><b>मुख्य वेबसाइट</b> पूरा परिचय</div><div><b>Login Portal</b> डिजिटल सेवाएँ</div><div><b>24×7</b> ऑनलाइन जानकारी</div></div>
+</div>
+<div class="heroVisual">
+<div class="dash">
+<div class="dashTop"><i class="ball"></i><i class="ball"></i><i class="ball"></i><span style="margin-left:auto;color:#777;font-size:11px">roh.digital.portal</span></div>
+<div class="dashScreen">
+<div class="dashGlow"></div>
+<div class="statrow">
+<div class="mini"><small>मुख्य वेबसाइट</small><b>LIVE</b></div>
+<div class="mini"><small>पोर्टल</small><b>ONLINE</b></div>
+<div class="mini"><small>क्षेत्र</small><b>रोह</b></div>
+</div>
+<div style="margin-top:18px;padding:20px;border:1px solid var(--line);border-radius:17px;background:#fff005">
+<small style="color:#a7aab5">DIGITAL ACCESS</small>
+<div class="agendaBars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+</div>
+</div>
+</div>
+<div class="floating"><small style="color:var(--muted)">ऑनलाइन सेवा</small><strong>Portal Ready</strong><div class="bar"><i></i></div></div>
+</div>
+</div>
+</section>
+
+<section id="portal">
+<div class="wrap">
+<div class="sectionHead"><div><span class="kicker">Portal Access</span><h2>Login और डिजिटल<br>सेवाएँ.</h2></div>
+<p>नीचे से संबंधित पोर्टल या सेवा पर जाएँ। Login वाले पेज को आप अपने वास्तविक Login URL से जोड़ सकते हैं।</p></div>
+<div class="services">
+<article class="service">
+<div class="icon">🔐</div><h3>Login Portal</h3>
+<p>पंजीकृत उपयोगकर्ताओं के लिए Login, व्यक्तिगत जानकारी और उपलब्ध डिजिटल सेवाओं तक पहुँच।</p>
+<div class="actions"><a class="btn primary" href="#login">Login करें ↗</a></div>
+</article>
+<article class="service">
+<div class="icon">📝</div><h3>शिकायत / सुझाव</h3>
+<p>जनता अपनी समस्या, शिकायत या सुझाव ऑनलाइन दर्ज कर सकती है। दर्ज जानकारी संबंधित प्रशासनिक पोर्टल में दिखाई जा सकती है।</p>
+<div class="actions"><a class="btn" href="https://mukhiyapanchayatroh.github.io/AADI-TECH-HUB-ROH/" target="_blank" rel="noopener noreferrer">शिकायत / सुझाव पोर्टल ↗</a></div>
+</article>
+<article class="service">
+<div class="icon">🌐</div><h3>मुख्य वेबसाइट</h3>
+<p>विपेन्द्र प्रसाद सिन्हा उर्फ दिपु मेहता की मुख्य वेबसाइट पर परिचय, घोषणा पत्र, गतिविधियाँ, गैलरी और सार्वजनिक जानकारी देखें।</p>
+<div class="actions"><a class="btn primary" href="https://mukhiyapanchayatroh.github.io/dipu-mehta-roh/" target="_blank" rel="noopener noreferrer">मुख्य वेबसाइट ↗</a></div>
+</article>
+</div>
+</div>
+</section>
+
+<section id="features">
+<div class="wrap">
+<div class="sectionHead"><div><span class="kicker">Digital Services</span><h2>पोर्टल में क्या<br>मिल सकता है?</h2></div>
+<p>इस Home Page को अलग Login/Service Website के प्रवेश द्वार के रूप में इस्तेमाल किया जा सकता है।</p></div>
+<div class="process">
+<div class="step"><div class="num">01</div><h3>Login / Registration</h3><p>उपयोगकर्ता Login या Registration करके उपलब्ध सेवाओं तक पहुँच सकता है।</p></div>
+<div class="step"><div class="num">02</div><h3>शिकायत दर्ज करें</h3><p>समस्या, आवेदन या सुझाव से संबंधित जानकारी ऑनलाइन भेजने का माध्यम।</p></div>
+<div class="step"><div class="num">03</div><h3>Status / Updates</h3><p>जहाँ सुविधा उपलब्ध हो, शिकायत या अनुरोध की स्थिति और अपडेट देखे जा सकते हैं।</p></div>
+<div class="step"><div class="num">04</div><h3>मुख्य वेबसाइट</h3><p>उम्मीदवार का विस्तृत सार्वजनिक परिचय और अन्य सामग्री मुख्य वेबसाइट पर देखें।</p></div>
+</div>
+</div>
+</section>
+
+<section id="login">
+<div class="wrap">
+<div class="testimonial">
+<div class="quote"><span class="kicker">Login Portal</span>
+<p>“यहाँ से Login Portal पर जाएँ और अपनी उपलब्ध डिजिटल सेवाओं का उपयोग करें।”</p>
+<div class="person">सुरक्षित Login URL यहाँ जोड़ा जा सकता है।</div></div>
+<div class="cta">
+<span class="kicker">मुख्य वेबसाइट</span>
+<h2>पूरा परिचय वहाँ देखें.</h2>
+<p>मुख्य वेबसाइट पर रोह पंचायत से संबंधित उम्मीदवार परिचय, घोषणा पत्र, जनसंपर्क एवं गतिविधियाँ, फोटो/गैलरी और अन्य सार्वजनिक जानकारी उपलब्ध है।</p>
+<div class="actions">
+<a class="btn primary" href="https://mukhiyapanchayatroh.github.io/dipu-mehta-roh/" target="_blank" rel="noopener noreferrer">मुख्य वेबसाइट खोलें ↗</a>
+<a class="btn" href="#home">होम</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="help">
+<div class="wrap">
+<div class="sectionHead"><div><span class="kicker">सहायता</span><h2>कहाँ क्या मिलेगा?</h2></div>
+<p>दोनों वेबसाइटों की भूमिका अलग रखी गई है ताकि Besucher को सही जगह जल्दी मिल सके।</p></div>
+<div class="services">
+<article class="service"><div class="icon">🏠</div><h3>यह वेबसाइट — Portal</h3><p>Login, शिकायत/सुझाव, उपयोगकर्ता सेवाएँ और डिजिटल पोर्टल से जुड़े कार्यों के लिए।</p></article>
+<article class="service"><div class="icon">⭐</div><h3>मुख्य वेबसाइट</h3><p>उम्मीदवार का परिचय, घोषणा पत्र, जनसंपर्क, गतिविधियाँ, फोटो और सार्वजनिक जानकारी के लिए।</p></article>
+<article class="service"><div class="icon">💬</div><h3>संपर्क / सहायता</h3><p>किसी सेवा का उपयोग करने में समस्या होने पर संबंधित प्रशासनिक/पोर्टल सहायता माध्यम का उपयोग करें।</p></article>
+</div>
+</div>
+</section>
+
+<section>
+<div class="wrap">
+<div class="cta">
+<span class="kicker">Roh Panchayat Digital</span>
+<h2>मुख्य वेबसाइट पर जाएँ और पूरी जानकारी देखें.</h2>
+<p>यह पोर्टल डिजिटल सेवाओं के लिए प्रवेश पृष्ठ है। विस्तृत सार्वजनिक सामग्री के लिए मुख्य वेबसाइट का उपयोग करें।</p>
+<div class="actions"><a class="btn primary" href="https://mukhiyapanchayatroh.github.io/dipu-mehta-roh/" target="_blank" rel="noopener noreferrer">मुख्य वेबसाइट ↗</a><a class="btn" href="#portal">Portal Services</a></div>
+</div>
+</div>
+</section>
+</main><footer><div class="wrap foot">
+<div>© 2026 रोह पंचायत डिजिटल पोर्टल • सार्वजनिक सूचना एवं डिजिटल सेवाएँ</div>
+<div class="social">
+<a href="https://mukhiyapanchayatroh.github.io/dipu-mehta-roh/" target="_blank" rel="noopener noreferrer" title="मुख्य वेबसाइट">↗</a>
+<a href="#login" title="Login">🔐</a><a href="#help" title="सहायता">?</a>
+</div></div></footer>
+<script>
+/* अपने वास्तविक Login Portal का URL यहाँ डालें */
+const LOGIN_PORTAL_URL = "#login";
+document.querySelectorAll('a[href="#login"]').forEach(a => {
+  a.addEventListener('click', e => {
+    if (LOGIN_PORTAL_URL !== "#login") {
+      e.preventDefault();
+      window.open(LOGIN_PORTAL_URL, "_blank", "noopener,noreferrer");
+    }
+  });
+});
+document.querySelector('.mobileMenu')?.addEventListener('click',()=>{
+  document.querySelector('.links')?.classList.toggle('show')
+});
+</script>
+</body></html>
